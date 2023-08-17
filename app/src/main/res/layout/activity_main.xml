@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_down"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="30dp"
+        app:tint="@color/blue" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_black_italic"
+            android:text="Pemain 1"
+            android:textColor="@color/blue"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/lato_black_italic"
+            android:text="COM"
+            android:textColor="@color/blue"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <!--batu-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/rockPlayerOne"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rock"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/rockPlayerTwo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:tag="1"
+            android:src="@drawable/rock"/>
+    </RelativeLayout>
+    <!--Kertas-->
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/paperPlayerOne"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/paper"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/result"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/versus" />
+
+        <ImageView
+            android:id="@+id/paperPlayerTwo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:tag="2"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/paper" />
+    </RelativeLayout>
+    <!--batu-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/scissorPlayerOne"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/scissors"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/scissorPlayerTwo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:tag="3"
+            android:src="@drawable/scissors" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/refresh" />
+    </RelativeLayout>
+
+</LinearLayout>
